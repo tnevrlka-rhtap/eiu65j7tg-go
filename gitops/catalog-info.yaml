@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: eiu65j7tg-go-gitops
+  description: This is GitOps manifest for eiu65j7tg-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=eiu65j7tg-go
+    backstage.io/kubernetes-id: eiu65j7tg-go 
+    backstage.io/techdocs-ref: dir:. 
+    github.com/project-slug: tnevrlka-rhtap/eiu65j7tg-go-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:eiu65j7tg-go

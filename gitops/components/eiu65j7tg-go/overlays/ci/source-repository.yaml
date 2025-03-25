@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: eiu65j7tg-go-repository
+spec:
+  url: https://github.com/tnevrlka-rhtap/eiu65j7tg-go
